@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  background-color: rgb(207, 214, 236);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.nav-list {
+  background-color: rgb(154, 185, 231);
+  height: 40px;
+}
+header {
+  position: relative;
+}
+header img {
+  max-width: 100%;
+}
+.text-over-img {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+}
+.menu {
+  padding: 0;
+  list-style: none;
+  margin: -3px 0;
+}
+.menu li {
+  display: block;
+  float: left;
+  padding: 10px 30px;
+  border-right: 2px solid white;
+}
+.menu a {
+  text-decoration: none;
+  color: rgb(158, 65, 65);
+}
+.menu li:hover {
+  background-color: rgb(95, 170, 231);
+}
+.main {
+  background-color: rgb(242, 238, 247);
+  padding-top: 30px 0;
+}
+.main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-content {
+  float: left;
+  width: 66.666%;
+}
+.box {
+  border: 2px solid gray;
+  padding: 20px;
+  color: rgb(95, 170, 231);
+  border-radius: 20px;
+  margin: 20px 20px 0 20px;
+}
+.small-section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.box:hover {
+  background-color: rgb(228, 233, 240);
+}
+.right-content {
+  float: left;
+  width: 33.333%;
+}
+.small-images {
+  float: left;
+  margin-right: 20px;
+}
+
+.see-more a {
+  color: rgb(6, 98, 236);
+}
+footer {
+  position: relative;
+  height: 100px;
+  background-color: rgb(154, 185, 231);
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 899px) {
+  .left-content {
+    width: 100%;
+  }
+  .right-content {
+    width: 100%;
+  }
+  .menu li {
+    float: none;
+    padding: 5px 10px;
+  }
+  .nav-list {
+    height: auto;
+  }
+  .text-over-img {
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .menu li {
+    text-align: center;
+    border-bottom: 1px solid gray;
+  }
+}
